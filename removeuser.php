@@ -41,6 +41,7 @@ $token =token_panel($url,$username,$password);
 
 function getuser($token,$url_panel)
 {
+    global $status;
     $url =  $url_panel.'/api/users?status='.$status;
     $header_value = 'Bearer ';
 
